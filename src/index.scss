@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+
+    h1 {
+        color: #000;
+        font-size: 7rem;
+        margin: 0;
+        margin-bottom: 20px;
+
+        &.plus {
+            color: #7c42be;
+        }
+        &.minus {
+            color: #f76e2a;
+        }
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: 0;
+        color: #556581;
+    }
+
+    button {
+        background: transparent;
+        border: 2px solid transparent;
+        text-align: center;
+        font-size: 22px;
+        border-radius: 15px;
+        padding: 12px 25px;
+		width: 150px;
+        cursor: pointer;
+        margin: 0 10px;
+        transition: all 0.05s ease-in-out;
+
+        &.minus {
+            background-color: #f76e2a;
+            color: #fff;
+            box-shadow: 0 4px 0 darken(#f76e2a, 10%);
+            border: 1px solid darken(#f76e2a, 15%);
+        }
+
+        &.plus {
+            background-color: #7c42be;
+            color: #fff;
+            box-shadow: 0 4px 0 darken(#7c42be, 10%);
+            border: 1px solid darken(#7c42be, 15%);
+        }
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+
+        &:active {
+            transform: translateY(2px);
+            box-shadow: none;
+        }
+    }
+}
